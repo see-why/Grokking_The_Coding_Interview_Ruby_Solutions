@@ -5,8 +5,7 @@ def longest_substring_with_same_letters_after_replacement str, k
   window_start = longest_substring_length = maximum_char_count = 0
   str.each_char.with_index do |char, window_end|
     if window_end - maximum_char_count > k
-      start_char = str[window_start]
-      window[start_char] -= 1
+      window[str[window_start]] -= 1
       window_start += 1
     end
 
