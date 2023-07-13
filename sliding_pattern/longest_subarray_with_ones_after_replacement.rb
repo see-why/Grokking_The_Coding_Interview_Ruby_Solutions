@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Array=[0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], k=2
 
 def longest_subarray_with_ones_after_replacement arr, k

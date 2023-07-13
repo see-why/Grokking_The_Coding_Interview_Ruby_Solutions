@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # String="aabccbb", k=2
 
 def longest_substring_with_same_letters_after_replacement str, k

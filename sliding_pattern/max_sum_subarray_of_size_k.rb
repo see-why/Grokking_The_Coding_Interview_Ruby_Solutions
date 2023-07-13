@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # [2, 3, 4, 1, 5], k=2
 
 def max_sum_subarray_of_size_k(arr, k)

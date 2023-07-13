@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Fruit=['A', 'B', 'C', 'A', 'C']
 
 def fruits_into_basket fruits

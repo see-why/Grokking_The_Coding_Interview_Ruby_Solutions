@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # String="aabccbb"
 
 def longest_non_repeat_substring str

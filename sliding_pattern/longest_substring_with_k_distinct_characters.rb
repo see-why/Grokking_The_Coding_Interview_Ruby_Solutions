@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # String="araaci", K=2
 
 def longest_substring_with_k_distinct_characters(str, k)

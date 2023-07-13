@@ -10,7 +10,6 @@ def string_anagrams(str, pattern)
     next unless window.size == sorted_pattern.size
 
     result << window_start if window.chars.sort.join == sorted_pattern
-
     window = window.chars[1..-1].join
     window_start += 1
   end
@@ -59,3 +58,5 @@ end
 
 pp string_anagrams 'ppqp', 'pq'
 pp string_anagrams 'abbcabc', 'abc'
+pp string_anagrams_with_hash 'ppqp', 'pq'
+pp string_anagrams_with_hash 'abbcabc', 'abc'

@@ -1,5 +1,8 @@
+# frozen_string_literal: true
+
 # sorting the window to compare to the pattern...sorting can be expensive
 # in large strings
+
 def permutation_in_a_string(str, pattern)
   sorted_pattern = pattern.chars.sort.join
   window = ''

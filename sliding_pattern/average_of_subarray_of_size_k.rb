@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # [1, 3, 2, 6, -1, 4, 1, 8, 2], K=5
 
 def average_of_subarray_of_size_k(arr, k)
