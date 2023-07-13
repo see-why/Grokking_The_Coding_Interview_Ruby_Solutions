@@ -18,13 +18,8 @@ end
 # using a hash map
 def permutation_in_a_string_with_map(str, pattern)
   window = ''
-  char_map = {}
   matched = 0
-
-  pattern.each_char do |char|
-    char_map[char] = 0 unless char_map.key? char
-    char_map[char] += 1
-  end
+  char_map = map_character_frequencies(pattern)
 
   str.each_char do |char|
     window += char
@@ -44,6 +39,15 @@ def permutation_in_a_string_with_map(str, pattern)
     window = window.chars[1..-1].join
   end
   false
+end
+
+def map_character_frequencies(pattern)
+  char_map = {}
+  pattern.each_char do |char|
+    char_map[char] = 0 unless char_map.key? char
+    char_map[char] += 1
+  end
+  char_map
 end
 
 pp permutation_in_a_string 'oidbcaf', 'abc'
