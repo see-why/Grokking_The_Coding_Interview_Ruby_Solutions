@@ -17,32 +17,25 @@ def string_anagrams(str, pattern)
 end
 
 def string_anagrams_with_hash(str, pattern)
-  window = ''
   matched = window_start = 0
   result = []
   char_map = map_character_frequencies(pattern)
-  pp char_map
 
-  str.each_char do |char|
-    window += char
+  str.each_char.with_index do |char, window_end|
     if char_map.key? char
-      matched += 1 if (char_map[char] - 1).zero?
-      char_map[char] -= 1 if char_map[char].positive?
+      char_map[char] -= 1
+      matched += 1 if char_map[char].zero?
     end
-    pp matched
-    pp window
-    pp char_map
-    next unless window.size == pattern.size
-
     result << window_start if matched == char_map.keys.size
 
-    first_char = window.chars[0]
-    if char_map.key? first_char
-      matched -= 1
-      char_map[first_char] += 1
+    if window_end >= pattern.size - 1
+      first_char = str[window_start]
+      window_start += 1
+      if char_map.key? first_char
+        matched -= 1 if char_map[first_char].zero?
+        char_map[first_char] += 1
+      end
     end
-    window = window.chars[1..-1].join
-    window_start += 1
   end
   result
 end
