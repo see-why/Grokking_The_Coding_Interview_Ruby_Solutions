@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-# Fruit=['A', 'B', 'C', 'A', 'C']
-
-def fruits_into_basket fruits
+def fruits_into_basket(fruits)
   window_start = maximum_num_of_fruits = 0
   basket = {}
   fruits.each_with_index do |fruit, window_end|
@@ -21,6 +19,3 @@ def fruits_into_basket fruits
   end
   maximum_num_of_fruits
 end
-
-pp fruits_into_basket %w[A B C A C] # 3
-pp fruits_into_basket %w[A B C B B C] # 5

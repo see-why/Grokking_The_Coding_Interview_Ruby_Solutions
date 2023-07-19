@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# [1, 3, 2, 6, -1, 4, 1, 8, 2], K=5
-
 def average_of_subarray_of_size_k(arr, k)
   arr_of_averages = []
   sum = 0.0
@@ -16,5 +14,3 @@ def average_of_subarray_of_size_k(arr, k)
   end
   arr_of_averages
 end
-
-pp average_of_subarray_of_size_k [1, 3, 2, 6, -1, 4, 1, 8, 2], 5
