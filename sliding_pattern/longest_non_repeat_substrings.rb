@@ -2,7 +2,7 @@
 
 # String="aabccbb"
 
-def longest_non_repeat_substring str
+def longest_non_repeat_substrings(str)
   longest_string_length = window_start = 0
   window = {}
   str.each_char.with_index do |char, window_end|
@@ -22,7 +22,7 @@ def longest_non_repeat_substring str
   longest_string_length
 end
 
-def refactor_longest_non_repeat_substring str
+def refactor_longest_non_repeat_substrings(str)
   longest_string_length = window_start = 0
   window = {}
   str.each_char.with_index do |char, window_end|
@@ -36,10 +36,3 @@ def refactor_longest_non_repeat_substring str
   end
   longest_string_length
 end
-
-pp longest_non_repeat_substring 'aabccbb'
-pp longest_non_repeat_substring 'abbbb'
-pp longest_non_repeat_substring 'abccde'
-pp refactor_longest_non_repeat_substring 'aabccbb'
-pp refactor_longest_non_repeat_substring 'abbbb'
-pp refactor_longest_non_repeat_substring 'abccde'
