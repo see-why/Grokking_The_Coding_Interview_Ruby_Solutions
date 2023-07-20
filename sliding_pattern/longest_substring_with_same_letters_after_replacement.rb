@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
-# String="aabccbb", k=2
-
-def longest_substring_with_same_letters_after_replacement str, k
+def longest_substring_with_same_letters_after_replacement(str, k)
   window = {}
   window_start = longest_substring_length = maximum_char_count = 0
   str.each_char.with_index do |char, window_end|
@@ -18,7 +16,3 @@ def longest_substring_with_same_letters_after_replacement str, k
   end
   longest_substring_length
 end
-
-pp longest_substring_with_same_letters_after_replacement 'aabccbb', 2
-pp longest_substring_with_same_letters_after_replacement 'abbcb', 1
-pp longest_substring_with_same_letters_after_replacement 'abccde', 1

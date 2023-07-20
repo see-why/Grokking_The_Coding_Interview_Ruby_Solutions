@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-def longest_subarray_with_ones_after_replacement arr, k
+def longest_subarray_with_ones_after_replacement(arr, k)
   window_start = longest_subarray_length = max_num_ones = 0
   window = { 0 => 0, 1 => 0 }
 
