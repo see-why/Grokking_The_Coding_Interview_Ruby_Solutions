@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# String="araaci", K=2
-
 def longest_substring_with_k_distinct_characters(str, k)
   longest_substring_size = window_start = 0
   char_dict = {}
@@ -21,9 +19,3 @@ def longest_substring_with_k_distinct_characters(str, k)
   end
   longest_substring_size
 end
-
-pp longest_substring_with_k_distinct_characters 'araaci', 2
-pp longest_substring_with_k_distinct_characters 'araaci', 1
-pp longest_substring_with_k_distinct_characters 'cbbebi', 3
-pp longest_substring_with_k_distinct_characters 'aabacbebebe', 3
-pp longest_substring_with_k_distinct_characters 'aaaa', 2
