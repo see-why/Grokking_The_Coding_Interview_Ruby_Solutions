@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# Array=[0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], k=2
-
 def longest_subarray_with_ones_after_replacement arr, k
   window_start = longest_subarray_length = max_num_ones = 0
   window = { 0 => 0, 1 => 0 }
@@ -21,6 +19,3 @@ def longest_subarray_with_ones_after_replacement arr, k
   end
   longest_subarray_length
 end
-
-pp longest_subarray_with_ones_after_replacement [0, 1, 1, 0, 0, 0, 1, 1, 0, 1, 1], 2
-pp longest_subarray_with_ones_after_replacement [0, 1, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1, 1], 3
