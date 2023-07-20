@@ -26,12 +26,8 @@ def refactor_longest_non_repeat_substrings(str)
   longest_string_length = window_start = 0
   window = {}
   str.each_char.with_index do |char, window_end|
-    if window.key? char
-      window_start = [window[char]+1, window_start].max
-    end
-
+    window_start = [window[char] + 1, window_start].max if window.key? char
     window[char] = window_end
-
     longest_string_length = [longest_string_length, window_end - window_start + 1].max
   end
   longest_string_length
