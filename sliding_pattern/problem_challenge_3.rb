@@ -37,7 +37,3 @@ def map_character_frequencies(pattern)
   end
   char_map
 end
-
-pp smallest_window_containing_substring 'aabdec', 'abc'
-pp smallest_window_containing_substring 'abdabca', 'abc'
-pp smallest_window_containing_substring 'adcad', 'abc'
