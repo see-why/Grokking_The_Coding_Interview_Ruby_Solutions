@@ -31,6 +31,3 @@ def word_character_frequencies(words)
   end
   word_map
 end
-
-pp words_concatenation 'catfoxcat', %w[cat fox]
-pp words_concatenation 'catcatfoxfox', %w[cat fox]
