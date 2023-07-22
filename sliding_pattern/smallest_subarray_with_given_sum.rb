@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# [2, 1, 5, 2, 3, 2], S=7
-
 def smallest_subarray_with_given_sum(arr, k)
   sum = window_start = 0
   size = arr.size
@@ -17,7 +15,3 @@ def smallest_subarray_with_given_sum(arr, k)
   end
   size
 end
-
-pp smallest_subarray_with_given_sum [2, 1, 5, 2, 3, 2], 7
-pp smallest_subarray_with_given_sum [2, 1, 5, 2, 8], 7
-pp smallest_subarray_with_given_sum [3, 4, 1, 1, 6], 8
