@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../sliding_pattern/average_of_subarray_of_size_k'
+require_relative '../../sliding_pattern/introduction'
 require 'test/unit'
 
 # test class for the sliding pattern solutions
