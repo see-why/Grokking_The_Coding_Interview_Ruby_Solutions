@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 def string_anagrams(str, pattern)
   sorted_pattern = pattern.chars.sort.join
   window = ''
@@ -48,8 +49,3 @@ def map_character_frequencies(pattern)
   end
   char_map
 end
-
-pp string_anagrams 'ppqp', 'pq'
-pp string_anagrams 'abbcabc', 'abc'
-pp string_anagrams_with_hash 'ppqp', 'pq'
-pp string_anagrams_with_hash 'abbcabc', 'abc'
