@@ -52,13 +52,3 @@ def map_character_frequencies(pattern)
   end
   char_map
 end
-
-pp permutation_in_a_string 'oidbcaf', 'abc'
-pp permutation_in_a_string 'odicf', 'dc'
-pp permutation_in_a_string 'bcdxabcdy', 'bcdyabcdx'
-pp permutation_in_a_string 'aaacb', 'abc'
-
-pp permutation_in_a_string_with_map 'oidbcaf', 'abc'
-pp permutation_in_a_string_with_map 'odicf', 'dc'
-pp permutation_in_a_string_with_map 'bcdxabcdy', 'bcdyabcdx'
-pp permutation_in_a_string_with_map 'aaacb', 'abc'
