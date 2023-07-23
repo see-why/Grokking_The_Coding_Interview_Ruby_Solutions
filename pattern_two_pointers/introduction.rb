@@ -35,3 +35,16 @@ def pair_with_target_sum_using_binary_search(arr, target)
   end
   [-1, -1]
 end
+
+# expects a sorted arr
+def pair_with_target_sum_using_hash_map(arr, target)
+  nums = {}
+  arr.each_with_index do |item, ind|
+    diff = target - item
+    return [nums[diff], ind] if nums.key? diff
+
+    nums[item] = ind
+  end
+
+  [-1, -1]
+end
