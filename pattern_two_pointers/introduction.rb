@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# expects a sorted arr
 def pair_with_target_sum(arr, target)
   left = 0
   right = arr.size - 1
