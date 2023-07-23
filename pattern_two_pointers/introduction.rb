@@ -16,6 +16,7 @@ def pair_with_target_sum(arr, target)
   [-1, -1]
 end
 
+# expects a sorted arr
 def pair_with_target_sum_using_binary_search(arr, target)
   arr.each_with_index do |item, ind|
     next_index = (arr.size + ind + 1) / 2
