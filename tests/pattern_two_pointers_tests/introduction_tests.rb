@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-# frozen_string_literal: true
-
 require_relative '../../pattern_two_pointers/introduction'
 require 'test/unit'
 
