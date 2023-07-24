@@ -14,6 +14,7 @@ def remove_duplicates(arr)
   next_non_dup
 end
 
+# does not expects a sorted arr
 def remove_duplicates_of_target(arr, target)
   i = next_non_dup = 0
 
