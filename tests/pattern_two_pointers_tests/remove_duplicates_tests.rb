@@ -4,7 +4,7 @@ require_relative '../../pattern_two_pointers/remove_duplicates'
 require 'test/unit'
 
 # test class for the sliding pattern solutions
-class TestSlidingPattern < Test::Unit::TestCase
+class TestPatternTwoPointers < Test::Unit::TestCase
   def test_remove_duplicates
     assert_equal(4, remove_duplicates([2, 3, 3, 3, 6, 9, 9]))
     assert_equal(2, remove_duplicates([2, 2, 2, 11]))
