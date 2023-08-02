@@ -15,8 +15,6 @@ def least_num_of_steps(point_a, steps, point_b)
   ((point_b - point_a) / steps.to_f).round(0)
 end
 
-pp least_num_of_steps(15, 40, 120)
-
 # Write a function that given an array of integers returns the smallest positive integer,
 # greater than 0, that does not exist in the array.
 #
@@ -40,8 +38,3 @@ def smallest_positive_integer(arr)
 
   1
 end
-
-pp smallest_positive_integer [1, 2, 3, 4, 5, 6]
-pp smallest_positive_integer [1, 2, 3, 4, 5, 6, 7]
-pp smallest_positive_integer [-1, -4, -3]
-pp smallest_positive_integer [2, 1, 6, 4, 3, 7, 11, -77]
