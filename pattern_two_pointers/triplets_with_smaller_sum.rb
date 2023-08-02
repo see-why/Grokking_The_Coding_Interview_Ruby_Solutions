@@ -10,11 +10,12 @@ def triplets_with_smaller_sum(arr, target)
     while left < right
       current_sum = arr[i] + arr[left] + arr[right]
       if current_sum < target
-        triplets_count += 1
+        triplets_count += (right - left)
         left += 1
       else
         right -= 1
       end
     end
   end
+  triplets_count
 end
