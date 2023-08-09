@@ -1,27 +1,20 @@
 # frozen_string_literal: true
 
 def dutch_national_flag_problem(arr)
-  left = 0
-  right = arr.size - 1
-  result = []
-  number_hash = { 0 => 0, 1 => 0, 2 => 0 }
+  low = i = 0
+  high = arr.size - 1
 
-  while left <= right
-    if left == right
-      number_hash[arr[left]] += 1
-    elsif arr[left] == arr[right]
-      number_hash[arr[left]] += 2
+  while i <= high
+    if arr[i].zero?
+      arr[i], arr[low] = arr[low], arr[i]
+      i += 1
+      low += 1
+    elsif arr[i] == 1
+      i += 1
     else
-      number_hash[arr[left]] += 1
-      number_hash[arr[right]] += 1
+      arr[i], arr[high] = arr[high], arr[i]
+      high -= 1
     end
-    left += 1
-    right -= 1
   end
-
-  number_hash.each do |key, value|
-    value.times { result << key }
-  end
-  puts number_hash
-  result
+  arr
 end
