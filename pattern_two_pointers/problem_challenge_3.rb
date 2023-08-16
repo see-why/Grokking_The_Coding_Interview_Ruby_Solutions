@@ -1,38 +1,33 @@
 # frozen_string_literal: true
 
 def minimum_window_sort(arr)
-  left = first_out_of_order(arr, 'asc')
-  right = first_out_of_order(arr, 'desc')
+  left = first_or_last_out_of_order(arr, :low)
+  return 0 if (arr.size - 1) == left
 
-  left -= 1
-  right += 1
+  right = first_or_last_out_of_order(arr, :high)
 
-  sub_array = arr[left..right]
-  sub_array = sub_array.sort
+  sub_array_min = +1.0 / 0.0
+  sub_array_max = -1.0 / 0.0
 
-  return 0 if sub_array == arr
-
-  while left.positive? && arr[left - 1] > sub_array.first
-    sub_array.unshift arr[left - 1]
-    left -= 1
+  (left..right).each do |i|
+    sub_array_max = [arr[i], sub_array_max].max
+    sub_array_min = [arr[i], sub_array_min].min
   end
 
-  while right < arr.size - 1 && arr[right + 1] < sub_array.last
-    sub_array.push arr[right + 1]
-    right += 1
-  end
+  left -= 1 while left.positive? && arr[left - 1] > sub_array_min
+  right += 1 while right < arr.size - 1 && arr[right + 1] < sub_array_max
 
-  sub_array.size
+  right - left + 1
 end
 
-def first_out_of_order(arr, order)
-  if order == 'asc'
-    1.upto(arr.size - 1) do |i|
-      return i if arr[i] < arr[i - 1]
-    end
+def first_or_last_out_of_order(arr, order)
+  if order == :low
+    low = 0
+    low += 1 while low < (arr.size - 1) && arr[low] < arr[low + 1]
+    low
   else
-    (arr.size - 2).downto(0) do |i|
-      return i if arr[i] > arr[i + 1]
-    end
+    high = arr.size - 1
+    high -= 1 while high.positive? && arr[high] > arr[high - 1]
+    high
   end
 end
