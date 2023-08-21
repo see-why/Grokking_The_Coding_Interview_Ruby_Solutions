@@ -2,7 +2,7 @@
 
 # representation of a linkedlist node.
 class Node
-  attr_accessor :next
+  attr_accessor :next, :val
 
   def initialize(value, next_node = nil)
     @val = value
