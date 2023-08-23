@@ -15,10 +15,11 @@ def happy_number(num)
 end
 
 def product_of_sum_of_digits(num)
-  str_num = num.to_s
   sum = 0
-  str_num.each_char do |char|
-    sum += char.to_i**2
+  while num.positive?
+    digit = num % 10
+    sum += digit**2
+    num = (num / 10.0).floor
   end
   sum
 end
