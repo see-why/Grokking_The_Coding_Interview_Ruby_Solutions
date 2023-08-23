@@ -2,11 +2,11 @@
 
 def happy_number(num)
   slow = num
-  fast = product_of_sum_of_digits(product_of_sum_of_digits(num))
+  fast = sum_of_product_digits(sum_of_product_digits(num))
 
   while slow != fast
-    slow = product_of_sum_of_digits(slow)
-    fast = product_of_sum_of_digits(product_of_sum_of_digits(fast))
+    slow = sum_of_product_digits(slow)
+    fast = sum_of_product_digits(sum_of_product_digits(fast))
 
     return true if slow == 1 || fast == 1
   end
@@ -14,7 +14,7 @@ def happy_number(num)
   false
 end
 
-def product_of_sum_of_digits(num)
+def sum_of_product_digits(num)
   sum = 0
   while num.positive?
     digit = num % 10
