@@ -2,6 +2,7 @@
 
 require_relative '../../lib/node'
 
+# write all shared context on Node class during tests
 module NodeHelper
   def list_head
     head = Node.new(1)
