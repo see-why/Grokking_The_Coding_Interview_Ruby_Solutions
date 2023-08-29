@@ -5,7 +5,7 @@ require_relative '../helpers/node_helper'
 require_relative '../../lib/node'
 require 'test/unit'
 
-# test class for the sliding pattern solutions
+# test class for the Fast and Slow Pointers pattern solutions
 class TestFastAndSlowPointers < Test::Unit::TestCase
   include NodeHelper
 
