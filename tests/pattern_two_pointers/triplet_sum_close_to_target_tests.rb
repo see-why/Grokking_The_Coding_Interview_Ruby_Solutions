@@ -3,7 +3,7 @@
 require_relative '../../pattern_two_pointers/triplet_sum_close_to_target'
 require 'test/unit'
 
-# test class for the sliding pattern solutions
+# test class for the Two Pointers pattern solutions
 class TestPatternTwoPointers < Test::Unit::TestCase
   def test_triplet_sum_close_to_target
     assert_equal(1, triplet_sum_close_to_target([-2, 0, 1, 2], 2))

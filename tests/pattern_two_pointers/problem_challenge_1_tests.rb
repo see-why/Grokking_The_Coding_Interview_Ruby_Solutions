@@ -3,7 +3,7 @@
 require_relative '../../pattern_two_pointers/problem_challenge_1'
 require 'test/unit'
 
-# test class for the sliding pattern solutions
+# test class for the Two Pointers pattern solutions
 class TestPatternTwoPointers < Test::Unit::TestCase
   def test_quadruple_sum_to_target
     assert_equal([[-3, -1, 1, 4], [-3, 1, 1, 2]], quadruple_sum_to_target([4, 1, 2, -1, 1, -3], 1))

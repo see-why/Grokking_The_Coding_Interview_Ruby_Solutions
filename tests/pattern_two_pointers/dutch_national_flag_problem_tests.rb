@@ -3,7 +3,7 @@
 require_relative '../../pattern_two_pointers/dutch_national_flag_problem'
 require 'test/unit'
 
-# test class for the sliding pattern solutions
+# test class for the Two Pointers pattern solutions
 class TestPatternTwoPointers < Test::Unit::TestCase
   def test_dutch_national_flag_problem
     assert_equal([0, 0, 1, 1, 2], dutch_national_flag_problem([1, 0, 2, 1, 0]))
