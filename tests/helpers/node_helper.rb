@@ -24,4 +24,15 @@ module NodeHelper
 
     head
   end
+
+  def rearrange_head
+    head = Node.new(2)
+    head.next = Node.new(4)
+    head.next.next = Node.new(6)
+    head.next.next.next = Node.new(8)
+    head.next.next.next.next = Node.new(10)
+    head.next.next.next.next.next = Node.new(12)
+
+    head
+  end
 end
