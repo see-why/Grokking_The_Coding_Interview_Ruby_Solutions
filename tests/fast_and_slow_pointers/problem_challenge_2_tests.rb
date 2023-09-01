@@ -11,7 +11,10 @@ class TestFastAndSlowPointers < Test::Unit::TestCase
 
   def test_rearrange_a_linkedlist
     head = rearrange_head
+    assert_equal([2, 12, 4, 10, 6, 8], rearrange_a_linkedlist(head))
 
-    assert_equal([2, 4, 6, 8, 10, 12], rearrange_a_linkedlist(head))
+    head = rearrange_head
+    head.next.next.next.next.next = nil
+    assert_equal([2, 10, 4, 8, 6], rearrange_a_linkedlist(head))
   end
 end
