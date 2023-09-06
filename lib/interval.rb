@@ -2,8 +2,14 @@
 
 # represents an interval with an start and finish index
 class Interval
+  attr_accessor :start, :finish
+
   def initialize(start, finish)
     @start = start
-    @end = finish
+    @finish = finish
+  end
+
+  def interval
+    [@start, @finish]
   end
 end
