@@ -7,8 +7,8 @@ require 'test/unit'
 # test class for the Fast and Slow Pointers solutions
 class TestPatternMergeIntervals < Test::Unit::TestCase
   def test_merge_interval
-    assert_equal([[1, 3], [4, 7], [8, 12]], insert_interval(array_test_case_one))
-    assert_equal([[1, 3], [4, 12]], insert_interval(array_test_case_two))
-    assert_equal([[1, 4], [5, 7]], insert_interval(array_test_case_three))
+    assert_equal([[1, 3], [4, 7], [8, 12]], insert_interval(interval_test_case_one_two, Interval.new(4, 6)))
+    assert_equal([[1, 3], [4, 12]], insert_interval(interval_test_case_one_two, Interval.new(4, 10)))
+    assert_equal([[1, 4], [5, 7]], insert_interval(interval_test_case_three, Interval.new(1, 4)))
   end
 end
