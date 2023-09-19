@@ -14,10 +14,10 @@ def merge_intervals_test_case_three
   [Interval.new(1, 4), Interval.new(2, 6), Interval.new(3, 5)]
 end
 
-def interval_test_case_one_two
+def insert_interval_test_case_one_two
   [Interval.new(1, 3), Interval.new(5, 7), Interval.new(8, 12)]
 end
 
-def interval_test_case_three
+def insert_interval_test_case_three
   [Interval.new(2, 3), Interval.new(5, 7)]
 end
