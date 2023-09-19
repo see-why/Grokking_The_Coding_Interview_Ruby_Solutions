@@ -2,15 +2,15 @@
 
 require_relative '../../lib/interval'
 
-def array_test_case_one
+def merge_intervals_test_case_one
   [Interval.new(1, 4), Interval.new(2, 5), Interval.new(7, 9)]
 end
 
-def array_test_case_two
+def merge_intervals_test_case_two
   [Interval.new(6, 7), Interval.new(2, 4), Interval.new(5, 9)]
 end
 
-def array_test_case_three
+def merge_intervals_test_case_three
   [Interval.new(1, 4), Interval.new(2, 6), Interval.new(3, 5)]
 end
 
