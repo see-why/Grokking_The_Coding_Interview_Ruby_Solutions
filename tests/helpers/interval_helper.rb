@@ -33,3 +33,19 @@ end
 def conflicting_appointments_test_case_three
   [Interval.new(4, 5), Interval.new(2, 3), Interval.new(3, 6)]
 end
+
+def minimum_meeting_rooms_test_case_one
+  merge_intervals_test_case_one
+end
+
+def minimum_meeting_rooms_test_case_two
+  conflicting_appointments_test_case_two
+end
+
+def minimum_meeting_rooms_test_case_three
+  [Interval.new(1, 4), Interval.new(2, 3), Interval.new(3, 6)]
+end
+
+def minimum_meeting_rooms_test_case_four
+  [Interval.new(4, 5), Interval.new(2, 3), Interval.new(2, 4), Interval.new(3, 5)]
+end
