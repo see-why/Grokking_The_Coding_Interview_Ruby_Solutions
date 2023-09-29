@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    amorim-algorithms (0.6.1)
     ast (2.4.2)
     json (2.5.1)
     language_server-protocol (3.17.0.3)
@@ -32,6 +33,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  amorim-algorithms (~> 0.6.1)
   rubocop
 
 BUNDLED WITH
