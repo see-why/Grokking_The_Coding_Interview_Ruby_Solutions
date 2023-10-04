@@ -49,3 +49,15 @@ end
 def minimum_meeting_rooms_test_case_four
   [Interval.new(4, 5), Interval.new(2, 3), Interval.new(2, 4), Interval.new(3, 5)]
 end
+
+def employee_free_time_test_case_one
+  [[Interval.new(1, 3), Interval.new(5, 6)], [Interval.new(2, 3), Interval.new(6, 8)]]
+end
+
+def employee_free_time_test_case_two
+  [[Interval.new(1, 3), Interval.new(9, 12)], [Interval.new(2, 4), Interval.new(6, 8)]]
+end
+
+def employee_free_time_test_case_three
+  [[Interval.new(1, 3), Interval.new(2, 4)], [Interval.new(3, 5), Interval.new(7, 9)]]
+end
