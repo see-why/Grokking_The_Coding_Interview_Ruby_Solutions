@@ -11,4 +11,10 @@ class TestPatternMergeIntervals < Test::Unit::TestCase
     assert_equal([[4, 6], [8, 9]], employee_free_time(employee_free_time_test_case_two))
     assert_equal([5, 7], employee_free_time(employee_free_time_test_case_three))
   end
+
+  def test_employee_free_time_with_heap
+    assert_equal([3, 5], employee_free_time_with_heap(employee_free_time_test_case_one))
+    assert_equal([[4, 6], [8, 9]], employee_free_time_with_heap(employee_free_time_test_case_two))
+    assert_equal([5, 7], employee_free_time_with_heap(employee_free_time_test_case_three))
+  end
 end
