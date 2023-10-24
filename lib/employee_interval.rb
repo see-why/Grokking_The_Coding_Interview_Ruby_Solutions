@@ -6,7 +6,7 @@ class EmployeeInterval
 
   def initialize(interval, employee_index, interval_index)
     @interval = interval
-    @employee_index = start
-    @interval_index = finish
+    @employee_index = employee_index
+    @interval_index = interval_index
   end
 end
