@@ -21,7 +21,7 @@ def rearrange_a_linkedlist(head)
     second_half = temp
   end
 
-  print_list(head)
+  head.print_list
 end
 
 def reverse_list(head)
@@ -34,15 +34,4 @@ def reverse_list(head)
   end
 
   prev
-end
-
-def print_list(head)
-  temp = head
-  result = []
-
-  until temp.nil?
-    result << temp.val
-    temp = temp.next
-  end
-  result
 end
